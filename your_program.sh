@@ -18,8 +18,6 @@ set -e # Exit early if any commands fail
   cmake --build ./build
 )
 
-read -p "Press enter to continue"
-
 # Copied from .codecrafters/run.sh
 #
 # - Edit this to change how your program runs locally
