@@ -15,10 +15,10 @@ set -e # Exit early if any commands fail
 (
   cd "$(dirname "$0")" # Ensure compile steps are run within the repository directory
   cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg\scripts\buildsystems\vcpkg.cmake"
-  read -p "Press enter to continue"
-
   cmake --build ./build
 )
+
+read -p "Press enter to continue"
 
 # Copied from .codecrafters/run.sh
 #
