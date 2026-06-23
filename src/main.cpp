@@ -33,7 +33,7 @@ int main() {
       return 0;
     }
     else if (command == "echo") {
-      std::cout << user_input << std::endl;
+      std::cout << user_input.substr(5) << std::endl;
     }
     else {
       std::cout << user_input << ": command not found" << std::endl;
