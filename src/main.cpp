@@ -29,7 +29,7 @@ int main() {
           std::end(builtins)) {
         std::cout << token << " is a shell builtin" << std::endl;
       } else {
-        std::cout << token << ": command not found" << std::endl;
+        std::cout << token << ": not found" << std::endl;
       }
     } else if (command == "echo") {
       std::cout << user_input.substr(5) << std::endl;
